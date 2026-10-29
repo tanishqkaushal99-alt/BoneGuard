@@ -22,7 +22,7 @@ const ResultsPage = () => {
     }
 
     const isDetected = result.prediction === "Cancer Detected";
-    const confidencePercent = Math.min(98.76, Math.round(result.confidence * 100));
+    const confidencePercent = Math.round(result.confidence * 100);
 
     return (
         <div className="py-16 px-4 max-w-5xl mx-auto space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
